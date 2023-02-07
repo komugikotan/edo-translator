@@ -228,7 +228,6 @@ function New_to_Old_Kanji($sentence)
 
     return $sentence;
 }
-
 ?>
 
 
