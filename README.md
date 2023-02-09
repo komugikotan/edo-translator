@@ -1,17 +1,17 @@
 # 江戸弁翻訳API
 
 ## APIの使い方
-## クエリ
+### クエリ
 
 このAPIが要求するクエリは、3つです。
 
-・sentence
-・from (tokyoかedo)
-・to (tokyoかedo)
+・sentence  
+・from (tokyoかedo)  
+・to (tokyoかedo)  
 
-## JSON
+### JSON
 
-結果はJSON形式で返ってきます。例えば、「http://komugio.starfree.jp/api/edo_translator/?sentence=このAPIを使ってみました%E3%80%82&from=tokyo&to=edo」のように送ると、結果は、「{"sentence":"\u3053\u306eAPI\u3092\u4f7f\u3063\u3066\u307f\u307e\u3057\u305f\u3002"}」のように返ってきます。
+結果はJSON形式で返ってきます。例えば、「http://komugio.starfree.jp/api/edo_translator/?sentence=このAPIを使ってみました%E3%80%82&from=tokyo&to=edo」  のように送ると、結果は  「{"sentence":"\u3053\u306eAPI\u3092\u4f7f\u3063\u3066\u307f\u307e\u3057\u305f\u3002"}」のように返ってきます。
 
 ## サーバーにインストールして使う
 ### 使い方
