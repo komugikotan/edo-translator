@@ -179,6 +179,7 @@ function to_tokyo(){
     }
 }
 
+
 function getParse($sentence) {
     $url = 'https://labs.goo.ne.jp/api/morph';
     $data = ['app_id' => 'Your API Key', 'sentence' => $sentence];
@@ -203,8 +204,9 @@ function csv_to_array($file_name){
     $array_csv = explode("\n", $csv);
 
     foreach($array_csv as $key => $value){
+        if($key == 0) continue;
+        if(!$value) continue;
         $array_output_csv[$key] = explode(",", $value);
-
     }
 
     return $array_output_csv;
@@ -229,5 +231,3 @@ function New_to_Old_Kanji($sentence)
     return $sentence;
 }
 ?>
-
-
